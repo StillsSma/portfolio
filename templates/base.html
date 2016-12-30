@@ -1,0 +1,164 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+<div id="top" class="">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#section-one">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+
+<nav class="site-navigation page-navigation">
+  <style media="screen">
+  nav.page-navigation {
+  width: 80px;
+  background-color: #ebebeb;
+  position: fixed;
+  top:20%;
+  left:0;
+}
+nav.page-navigation li {
+  width: 100%;
+}
+nav.page-navigation a {
+  padding: 0.6em 10%;
+  width: 80%;
+}
+  </style>
+  <ul class="menu">
+    <li><a href="#top">Top</a></li>
+    <li><a href="#section-one">One</a></li>
+    <li><a href="#section-two">Two</a></li>
+    <li><a href="#section-three">Three</a></li>
+
+  </ul>
+</nav>
+
+<div  class="jumbotron">
+  <div class="container text-center">
+    <h1>My Portfolio</h1>
+    <p>Some text that represents "Me"...</p>
+  </div>
+</div>
+
+<div class="container">
+
+
+<div id="section-one" class="jumbotron">
+  <h1>Now</h1>
+  <div class="row">
+  <div class="col-sm-4">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+
+<div id="section-two" class="jumbotron">
+  <h1>Now</h1>
+  <div class="row">
+  <div class="col-sm-4">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+
+<div id="section-three" class="jumbotron">
+  <h1>Now</h1>
+  <div class="row">
+  <div class="col-sm-4">
+
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }} /static/js/jquery.combinedScroll.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $('.page-navigation').onePageNav();
+});
+</script>
+</body>
+
+<footer class="container-fluid text-center">
+  <div id="contact" class="container">
+    <div class="row">
+    <div class="col-sm-2">
+        <h5>Email</h5>
+        samdawson301@live.com
+        </div>
+        <div class="col-sm-2">
+            <h5>Phone</h5>
+            240-538-8811
+            </div>
+    <div class="col-sm-2">
+        <a href="https://github.com/StillsSma">Github</a>
+        </div>
+
+    <div class="col-sm-1">
+        <a href="https://www.linkedin.com/in/samuel-dawson-85767412a">LinkedIn</a>
+        </div>
+
+      </div>
+
+
+
+
+
+</footer>
+
+
+</html>
