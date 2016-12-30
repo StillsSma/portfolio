@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['SECRET_KEY_PORTFOLIO']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["whispering-lake-20315.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["mighty-reaches-63686.herokuapp.com", "localhost"]
 
 
 # Application definition
