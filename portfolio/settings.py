@@ -26,7 +26,7 @@ print(SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mighty-reaches-63686.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["secure-retreat-77657.herokuapp.com", "localhost"]
 
 
 # Application definition
