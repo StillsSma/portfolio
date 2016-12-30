@@ -21,12 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['SECRET_KEY_PORTFOLIO']
-print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["secure-retreat-77657.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["secure-retreat-77657.herokuapp.com", "localhost", "0.0.0.0"]
 
 
 # Application definition
@@ -125,6 +124,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
