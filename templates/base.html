@@ -12,13 +12,15 @@
 
 
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
+
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
 
-    /* Add a gray background color and some padding to the footer */
+    body {
+      background-color: #f2f2f2;
+    }
     footer {
       background-color: #f2f2f2;
       padding: 25px;
@@ -79,7 +81,7 @@ nav.page-navigation a {
 <div  class="jumbotron">
   <div class="container text-center">
     <h1>My Portfolio</h1>
-    <p>Some text that represents "Me"...</p>
+
   </div>
 </div>
 
@@ -87,7 +89,7 @@ nav.page-navigation a {
 
 
 <div id="section-one" class="jumbotron">
-  <h1>Now</h1>
+  <h1>Invoice Tracker</h1>
   <div class="row">
   <div class="col-sm-4">
 
@@ -100,9 +102,10 @@ nav.page-navigation a {
 
 
 <div id="section-two" class="jumbotron">
-  <h1>Now</h1>
+  <h1>Banking Simulator</h1>
   <div class="row">
   <div class="col-sm-4">
+    <img src="/media/French-Flag.jpg" alt="no" />
 
 </div>
 </div>
@@ -113,7 +116,12 @@ nav.page-navigation a {
 
 
 <div id="section-three" class="jumbotron">
-  <h1>Now</h1>
+  <h2>The Mighty Restraunt</h2>
+  <p>
+    A collaborative project between myself and fellow iron yard student Sean Thompson.
+  </p>
+  <h5>Link to Github</h5>
+  <h5>Link to Live Code</h5>
   <div class="row">
   <div class="col-sm-4">
 
@@ -129,6 +137,8 @@ nav.page-navigation a {
 <script type="text/javascript">
 jQuery(document).ready(function($) {
   $('.page-navigation').onePageNav();
+  $('.navbar-inverse').onePageNav();
+
 });
 </script>
 </body>
