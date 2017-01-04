@@ -8,15 +8,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
 
   <style>
 
+
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
+    img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+section {
+  padding-top: 50px;}
+
+
+
 
     body {
       background-color: #f2f2f2;
@@ -42,8 +56,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#section-one">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -69,66 +83,101 @@ nav.page-navigation a {
   width: 80%;
 }
   </style>
-  <ul class="menu">
-    <li><a href="#top">Top</a></li>
-    <li><a href="#section-one">One</a></li>
-    <li><a href="#section-two">Two</a></li>
-    <li><a href="#section-three">Three</a></li>
 
-  </ul>
 </nav>
 
-<div  class="jumbotron">
+<div style="background-image: url(/media/code.jpeg)" class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio</h1>
 
   </div>
 </div>
 
-<div class="container">
+<section id="about" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+        <header>
+          <h1>About Me</h1>
+        </header>
+          <p style="font-size:20px" class=text-muted>
+            My name is Sam Dawson.  I am a recent graduate of the Iron Yard, specializing in backend development with Django.  After graduating from Furman University with a BA in Economics, I began researching opportunities to expand my skillset in tech.  Coding is immensely satisfying in allowing me to utilize my problem-solving and analytic skills in a creative and ever-changing environment.
+          </p>
+        </div>
 
+        </div>
 
-<div id="section-one" class="jumbotron">
-  <h1>Invoice Tracker</h1>
-  <div class="row">
-  <div class="col-sm-4">
+<section id="projects" >
 
-</div>
-</div>
-</div>
-</div>
-
-<div class="container">
-
-
-<div id="section-two" class="jumbotron">
-  <h1>Banking Simulator</h1>
-  <div class="row">
-  <div class="col-sm-4">
-    <img src="/media/French-Flag.jpg" alt="no" />
-
-</div>
-</div>
-</div>
+<div class="container text-center">
+    <h1 style="padding-bottom: 30px">Projects</h1>
 </div>
 
 <div class="container">
-
-
-<div id="section-three" class="jumbotron">
-  <h2>The Mighty Restraunt</h2>
-  <p>
-    A collaborative project between myself and fellow iron yard student Sean Thompson.
-  </p>
-  <h5>Link to Github</h5>
-  <h5>Link to Live Code</h5>
   <div class="row">
-  <div class="col-sm-4">
+    <div class="col-md-4">
+      <h1>Invoice Tracker</h1>
+      <p style="font-size:20px" class=text-muted>
+        - My final project for the Iron Yard.  An app that generates invoices from online credit-card transactions through square, then tracks its state through the production process.
+      </p>
+      <p style="font-size:20px" class=text-muted>
+       <a href="https://github.com/StillsSma/final_project">Link to Code</a>
+      </p>
+      <p style="font-size:20px" class=text-muted>
+
+        <a href="https://sam-dawson-invoice-tracker.herokuapp.com/">Link to Live Project</a>
+
+      </p>
+
+    </div>
+    <div class="col-md-8">
+      <img src="/media/invoice_tracker_screen_shot.png" alt="P" />
+    </div>
+
+  </div>
 
 </div>
+
+<div style="padding-top: 50px" class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Child Care App</h1>
+      <p style="font-size:20px" class=text-muted>
+        - An app that simulates a day care checkin.  The facility enters new children into the database with an associated pin number, which parents then use to check their children in and out.
+      </p>
+      <p style="font-size:20px" class=text-muted>
+       <a href="https://github.com/StillsSma/childcare_checkin">Link to Code</a>
+      </p>
+
+    </div>
+    <div class="col-md-8">
+      <img src="/media/child_care_screen_shot.png" alt="P" />
+    </div>
+
+  </div>
+
 </div>
+
+<div style="padding-top: 50px" class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Banking Simulator</h1>
+      <p style="font-size:20px" class=text-muted>
+        - App that simulates an online banking experience.  Users can make deposits and withdrawls, which is calculated into a balance realtime.  Accompanied by a Django RESTful API.
+      </p>
+      <p style="font-size:20px" class=text-muted>
+       <a href="https://github.com/StillsSma/banking_simulator">Link to Code</a>
+      </p>
+
+    </div>
+    <div class="col-md-8">
+      <img src="/media/banking_screen_shot.png" alt="P" />
+    </div>
+
+  </div>
+
 </div>
-</div>
+
+</section>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -144,27 +193,30 @@ jQuery(document).ready(function($) {
 </body>
 
 <footer class="container-fluid text-center">
+  <h3>Contact Me</h3>
   <div id="contact" class="container">
-    <div class="row">
-    <div class="col-sm-2">
-        <h5>Email</h5>
-        samdawson301@live.com
-        </div>
-        <div class="col-sm-2">
-            <h5>Phone</h5>
-            240-538-8811
-            </div>
-    <div class="col-sm-2">
-        <a href="https://github.com/StillsSma">Github</a>
+
+    <div class="col-md-2 col-md-offset-2 ">
+      <a href="mailto:samdawson301@live.com" class="btn">
+    <span class="fa fa-envelope fa-4x"></span>
+  </a>
         </div>
 
-    <div class="col-sm-1">
-        <a href="https://www.linkedin.com/in/samuel-dawson-85767412a">LinkedIn</a>
+    <div class="col-md-2">
+
+      <a href="https://github.com/StillsSma" class="btn">
+      <span class="fa fa-github fa-4x"></span>
         </div>
+
+    <div id=linkedin class="col-md-2">
+          <a href="https://www.linkedin.com/in/samuel-dawson-85767412a" class="btn">
+        <span class="fa fa-linkedin fa-4x"></span>
+      </a>
+
+        </div>
+
 
       </div>
-
-
 
 
 
