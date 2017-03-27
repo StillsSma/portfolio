@@ -9,11 +9,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js" defer></script>
+   <script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js" defer></script>
+   <script src="{% static 'js/scroll.js' %}" type="text/javascript" defer></script>
 
   <style>
-
+  nav.page-navigation {
+  width: 80px;
+  background-color: #ebebeb;
+  position: fixed;
+  top:20%;
+  left:0;
+}
+nav.page-navigation li {
+  width: 100%;
+}
+nav.page-navigation a {
+  padding: 0.6em 10%;
+  width: 80%;
+}
 
     .navbar {
       margin-bottom: 0;
@@ -29,9 +44,6 @@
 section {
   padding-top: 50px;}
 
-
-
-
     body {
       background-color: #f2f2f2;
     }
@@ -39,9 +51,12 @@ section {
       background-color: #f2f2f2;
       padding: 25px;
     }
+
   </style>
 </head>
 <body>
+
+
 <div id="top" class="">
 
 <nav class="navbar navbar-inverse">
@@ -53,8 +68,8 @@ section {
         <span class="icon-bar"></span>
       </button>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse" >
+      <ul class="nav navbar-nav" id="myNavbar">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -67,22 +82,6 @@ section {
 </div>
 
 <nav class="site-navigation page-navigation">
-  <style media="screen">
-  nav.page-navigation {
-  width: 80px;
-  background-color: #ebebeb;
-  position: fixed;
-  top:20%;
-  left:0;
-}
-nav.page-navigation li {
-  width: 100%;
-}
-nav.page-navigation a {
-  padding: 0.6em 10%;
-  width: 80%;
-}
-  </style>
 
 </nav>
 
@@ -130,7 +129,7 @@ nav.page-navigation a {
 
     </div>
     <div class="col-md-8">
-      <img src="/media/invoice_tracker_screen_shot.png" alt="P" />
+      <img src="media/invoice_tracker_screen_shot.png" alt="P" />
     </div>
 
   </div>
@@ -180,23 +179,13 @@ nav.page-navigation a {
 </section>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }} /static/js/jquery.combinedScroll.js"></script>
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-  $('.page-navigation').onePageNav();
-  $('.navbar-inverse').onePageNav();
-
-});
-</script>
 </body>
 
-<footer class="container-fluid text-center">
-  <h3>Contact Me</h3>
-  <div id="contact" class="container">
+<footer class="container-fluid">
+  <h3 style="position: relative; left: 475px;" >Contact Me</h3>
+  <div id="contact" class="container" >
 
-    <div class="col-md-2 col-md-offset-2 ">
+    <div class="col-md-2 col-md-offset-3 ">
       <a href="mailto:samdawson301@live.com" class="btn">
     <span class="fa fa-envelope fa-4x"></span>
   </a>
